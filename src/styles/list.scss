@@ -1,0 +1,22 @@
+.card-grid-container {
+  container-type: inline-size;
+  width: 100%;
+}
+
+.card-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@container (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@container (min-width: 1000px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

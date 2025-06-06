@@ -1,0 +1,43 @@
+.btn {
+  font-weight: bold;
+  padding: 1.5rem;
+  border-radius: 9999px;
+  box-shadow: var(--button-box-shadow);
+  transition: all 0.2s;
+  display: flex;
+  outline: none;
+  align-self: center;
+  color: var(--button-text);
+
+  &.btn-primary {
+    background: var(--primary);
+
+    &:hover {
+      background: var(--primary-dark);
+    }
+    &:focus {
+      box-shadow: var(--button-box-shadow-focus);
+    }
+  }
+
+  &.btn-secondary {
+    background: var(--secondary);
+
+    &:hover {
+      background: var(--secondary-dark);
+    }
+    &:focus {
+      box-shadow: 0 0 0 4px var(--secondary);
+    }
+  }
+
+  &.btn-loading,
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:not(.btn-loading):not(:disabled) {
+    cursor: pointer;
+  }
+}

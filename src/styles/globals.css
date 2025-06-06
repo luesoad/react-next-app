@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+:root {
+  --primary: #db9d47;
+  --primary-dark: #b78a3c;
+  --secondary: #ff784f;
+  --secondary-dark: #ff5a2f;
+  --primary-light: #ffe19c;
+  --tw-prose-body: #3a3042;
+  --tw-bg-base: #ffe19c;
+  --dark-purple: #3a3042;
+  --earth-yellow: #db9d47;
+  --coral: #ff784f;
+  --peach-yellow: #ffe19c;
+  --nyanza: #edffd9;
+  --button-text: #fff;
+  --button-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --button-box-shadow-focus: 0 0 0 4px var(--primary-light);
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
